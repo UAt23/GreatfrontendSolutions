@@ -23,3 +23,12 @@ export default function get(objectParam, pathParam, defaultValue) {
       return defaultValue;
    }
 }
+
+/* 
+   3 failed test cases on submission
+      - count was not incremented correctly since leaf has 0 value 
+      and if statement inside the loop take that as falsy.
+      - if input is array it can't split operation gives error.
+      - if the selected leaf's value is undefined or null logic crushes.
+
+*/
